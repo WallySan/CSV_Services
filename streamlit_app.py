@@ -35,8 +35,8 @@ BATCH_SIZE = 5000
 @st.cache_resource
 def get_sqlite_connection():
     """Retorna uma conexão SQLite segura e cached."""
-    # O timeout é importante para evitar problemas de bloqueio
-    return sqlite3.connect(DB_FILE, timeout=30.0)
+    # CORREÇÃO: Adicione check_same_thread=False para evitar o erro de thread do Streamlit
+    return sqlite3.connect(DB_FILE, timeout=30.0, check_same_thread=False)
 
 def execute_batch_insert_sqlite(cursor: sqlite3.Cursor, table_name: str, columns: List[str], batch_data: List[Tuple]):
     """Executa um INSERT em lote usando executemany."""
