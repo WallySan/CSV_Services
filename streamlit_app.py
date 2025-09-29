@@ -6,6 +6,8 @@ import uuid
 import zipfile
 import re
 import io
+import numpy as np  # <--- ADICIONE ESTA LINHA!
+
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
 
