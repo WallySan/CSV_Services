@@ -15,6 +15,9 @@ st.set_page_config(layout="wide")
 st.title("Página de Análise SQL e Visualização")
 st.markdown("Use esta página para executar consultas SQL diretamente no banco de dados local **`db.sqlite`**.")
 
+st.sidebar.success("Selecionar AAAA")
+
+
 # ----------------------------------------------------------------------
 # FUNÇÕES DE CONEXÃO E CONSULTA (Chave para o Streamlit Multi-página)
 # ----------------------------------------------------------------------
