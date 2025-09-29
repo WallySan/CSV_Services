@@ -15,7 +15,7 @@ from typing import List, Dict, Any, Tuple
 # CONFIGURAÇÕES E INICIALIZAÇÃO
 # ----------------------------------------------------------------------
 st.set_page_config(layout="wide")
-st.title("Processamento Monolítico (Streamlit) para SQLite Local")
+st.title("Página Principal: Upload e Inserção de Dados CSV/ZIP")
 
 # Pasta de dados para salvar temporariamente o arquivo (necessário para zip e segurança)
 DATA_DIR = Path("./dados_temp")
