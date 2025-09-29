@@ -16,6 +16,8 @@ from typing import List, Dict, Any, Tuple
 # ----------------------------------------------------------------------
 st.set_page_config(layout="wide")
 st.title("Página Principal: Upload e Inserção de Dados CSV/ZIP")
+st.sidebar.success("Selecionar AAAA")
+
 
 # Pasta de dados para salvar temporariamente o arquivo (necessário para zip e segurança)
 DATA_DIR = Path("./dados_temp")
