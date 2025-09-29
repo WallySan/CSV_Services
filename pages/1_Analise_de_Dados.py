@@ -14,8 +14,9 @@ DB_FILE = "db.sqlite"
 st.set_page_config(layout="wide")
 st.title("Página de Análise SQL e Visualização")
 st.markdown("Use esta página para executar consultas SQL diretamente no banco de dados local **`db.sqlite`**.")
+st.sidebar.header("Plotting Demo")
 
-st.sidebar.success("Selecionar AAAA")
+
 
 
 # ----------------------------------------------------------------------
