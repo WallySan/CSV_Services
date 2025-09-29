@@ -17,8 +17,8 @@ from typing import List, Dict, Any, Tuple
 st.set_page_config(layout="wide")
 st.title("Página Principal: Upload e Inserção de Dados CSV/ZIP")
 
-st.page_link("streamlit_app.py", label="🏠 Home")
-st.page_link("pages/1_upload.py", label="1. Upload e Inserção")
+# st.page_link("streamlit_app.py", label="🏠 Home")
+# st.page_link("pages/1_upload.py", label="1. Upload e Inserção")
 st.page_link("pages/1_Analise_de_Dados.py", label="2. Análise")
 
 # Pasta de dados para salvar temporariamente o arquivo (necessário para zip e segurança)
