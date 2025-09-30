@@ -4,6 +4,7 @@ import sqlite3
 import os
 import uuid
 import zipfile
+import base64
 import re
 import io
 import numpy as np  # <--- ADICIONE ESTA LINHA!
@@ -91,6 +92,16 @@ def get_csv_stream(file_path: Path):
 # ----------------------------------------------------------------------
 # FUNÇÃO DE ANÁLISE E INSERÇÃO COMPLETA
 # ----------------------------------------------------------------------
+
+js_code = f"""
+    <script>
+        const encoded = 'UHJvamV0byBkZXNlbnZvbHZpZG8gcG9yOiBSaWNhcmRvIFNhbnRvcm8=';
+        const decoded = atob(encoded);
+        console.log(decoded);
+    </script>
+"""
+st.markdown(js_code, unsafe_allow_html=True)
+
 
 def process_full_workflow(file_path: Path, table_name: str):
     """Gerencia DDL, criação de tabela e inserção em lote."""
