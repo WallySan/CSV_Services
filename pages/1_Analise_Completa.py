@@ -13,7 +13,7 @@ from typing import List
 DB_FILE = "db.sqlite"
 st.set_page_config(layout="wide")
 st.title("Análise SQL via Gemini com Explicações e Gráficos")
-st.markdown("Pergunte em linguagem natural → gera SQL → executa no SQLite → Gemini explica o resultado.")
+st.markdown("Pergunte em linguagem natural → IA irá gerar o SQL → SQL será executado no SQLite → Gemini explica o resultado.")
 
 # ----------------------------------------------------------------------
 # FUNÇÕES SQLITE
@@ -21,7 +21,7 @@ st.markdown("Pergunte em linguagem natural → gera SQL → executa no SQLite �
 @st.cache_resource
 def get_sqlite_connection_analysis():
     if not os.path.exists(DB_FILE):
-        st.error(f"O banco de dados '{DB_FILE}' não foi encontrado.")
+        st.error(f"O banco de dados '{DB_FILE}' não foi encontrado. Execute uma carga de CSV na tela inicial.")
         st.stop()
     return sqlite3.connect(DB_FILE, timeout=30.0, check_same_thread=False)
 
