@@ -1,14 +1,4 @@
-Excelente ideia\! Um `README.md` bem estruturado é essencial para qualquer projeto no GitHub.
-
-Aqui está o descritivo formatado em Markdown, pronto para ser copiado e colado no seu arquivo `README.md`, com títulos, emojis e ênfase para torná-lo mais atraente.
-
------
-
 # 🚀 Análise de Dados Inteligente com Gemini e Streamlit
-
-\<p align="center"\>
-\<em\>Transforme rapidamente dados brutos em insights e visualizações claras usando o poder da Inteligência Artificial do Google\!\</em\>
-\</p\>
 
 -----
 
@@ -49,7 +39,7 @@ No painel de análise, você deve:
 
 ### 5\. 🛠️ Geração Inteligente de Consulta SQL
 
-Diga adeus ao SQL complexo\! Com base na sua pergunta e no descritivo, a IA **monta o comando de consulta** necessário para extrair as informações corretas do seu banco de dados.
+Com base na sua pergunta e no descritivo, a IA **monta o comando de consulta** necessário para extrair as informações corretas do seu banco de dados.
 
 ### 6\. 📊 Análise, Resposta e Visualização
 
