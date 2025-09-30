@@ -4,7 +4,6 @@ import sqlite3
 import os
 import uuid
 import zipfile
-import base64
 import re
 import io
 import numpy as np  # <--- ADICIONE ESTA LINHA!
@@ -17,6 +16,8 @@ from typing import List, Dict, Any, Tuple
 # ----------------------------------------------------------------------
 st.set_page_config(layout="wide")
 st.title("Página Principal: Upload e Inserção de Dados CSV/ZIP")
+st.markdown(f"Desenvolvido por: Ricardo Santoro")
+
 
 # O link para o repositório
 github_link = "https://github.com/WallySan/CSV_Services"
