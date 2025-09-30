@@ -28,9 +28,6 @@ repo_text = "Repositório utilizado"
 # Criando o link usando st.markdown com a sintaxe de link do Markdown: [Texto](Link)
 st.markdown(f"**{repo_text}:** [{github_link}]({github_link})")
 
-# Alternativamente, para um visual mais simples:
-st.markdown(f"**Repositório utilizado:** [CSV_Services]({github_link})")
-
 # Para um botão, se preferir:
 st.link_button(repo_text, github_link)
 
