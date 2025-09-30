@@ -23,13 +23,13 @@ st.markdown(f"Desenvolvido por: Ricardo Santoro")
 github_link = "https://github.com/WallySan/CSV_Services"
 
 # O texto a ser exibido
-repo_text = "Repositório utilizado"
+repo_text = "Repositório utilizado: "
 
 # Criando o link usando st.markdown com a sintaxe de link do Markdown: [Texto](Link)
 st.markdown(f"**{repo_text}:** [{github_link}]({github_link})")
 
 # Para um botão, se preferir:
-st.link_button(repo_text, github_link)
+st.link_button("Acessar", github_link)
 
 # Pasta de dados para salvar temporariamente o arquivo (necessário para zip e segurança)
 DATA_DIR = Path("./dados_temp")
